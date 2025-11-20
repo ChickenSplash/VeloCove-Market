@@ -8,7 +8,7 @@ This application uses a backend Laravel API and a frontend React application to 
 ## Dev Environment Setup
 ### Backend
 - run `cd Backend` fron the root of this repo
-- run `composer install`
+- run `composer install` and then `npm install`.
 - run `php artisan migrate:fresh --seed`
 - run `php artisan serve`. This will allow the front end to communicate with the backend
 
