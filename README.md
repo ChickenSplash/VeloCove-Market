@@ -1,0 +1,17 @@
+# VeloCove Market
+This application uses a backend Laravel API and a frontend React application to allow the user to view the available products of a fictional online shop.
+
+## Features
+- All of the common filtering logic
+- Custom pagination
+
+## Dev Environment Setup
+### Backend
+- run `cd Backend` fron the root of this repo
+- run `composer install`
+- run `php artisan migrate:fresh --seed`
+- run `php artisan serve`. This will allow the front end to communicate with the backend
+
+### Frontend
+- run `cd Frontend` fron the root of this repo
+- run `npm install` and then `npm run dev`
