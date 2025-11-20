@@ -7,7 +7,7 @@ This application uses a backend Laravel API and a frontend React application to 
 
 ## Dev Environment Setup
 ### Backend
-- run `cd Backend` fron the root of this repo
+- run `cd Backend` from the root of this repo
 - run `composer install` and then `npm install`.
 - run `php artisan key:generate`
 - create a new file called `database.sqlite` inside of the [Backend/database](Backend/database) folder
@@ -15,5 +15,5 @@ This application uses a backend Laravel API and a frontend React application to 
 - run `php artisan serve`. This will allow the front end to communicate with the backend
 
 ### Frontend
-- run `cd Frontend` fron the root of this repo
+- run `cd Frontend` from the root of this repo
 - run `npm install` and then `npm run dev`
