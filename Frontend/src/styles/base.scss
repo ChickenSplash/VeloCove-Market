@@ -1,0 +1,29 @@
+@use "config" as *;
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: $secondary-color;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+
+    @media (min-width: $break-point-small) {
+        width: 740px;
+    }
+
+    @media (min-width: $break-point-medium) {
+        width: 960px;
+    }
+
+    @media (min-width: $break-point-large) {
+        width: 1356px;
+    }
+}

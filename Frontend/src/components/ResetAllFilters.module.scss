@@ -1,0 +1,33 @@
+@use "../styles/config" as *;
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid $secondary-color;
+    background-color: #f1f3f6;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s;
+    
+    &:hover {
+        border-color: $secondary-color;
+        background-color: $warning-color;
+    }
+}
+
+.buttonDisabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 9px 12px;
+    border-radius: 6px;
+    border: 1px solid $secondary-color;
+    background-color: #e7e8eb;
+    color: rgba(0,0,0,0.5)
+}

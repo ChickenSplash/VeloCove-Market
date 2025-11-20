@@ -1,0 +1,11 @@
+@use "../styles/config" as *;
+
+.options {
+  display: none;
+  width: 220px;
+  padding: 15px;
+  
+  @media (min-width: $break-point-medium) {
+    display: block
+  }
+}

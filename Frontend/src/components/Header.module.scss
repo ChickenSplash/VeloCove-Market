@@ -1,0 +1,26 @@
+@use "../styles/config" as *;
+
+.header {
+    background-color: $primary-color;
+    padding-block: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
+
+.titleBar {
+    @media (min-width: $break-point-small) {
+        display: flex;
+        align-items: center;
+        gap: 30px
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (min-width: $break-point-medium) {
+        flex-direction: row;
+    }
+}

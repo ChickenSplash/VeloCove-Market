@@ -1,0 +1,8 @@
+@use "../styles/config" as *;
+
+.footer {
+    margin-top: 30px;
+    padding-block: 30px;
+    background-color: $primary-color;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,42 @@
+@use "../styles/config" as *;
+
+.rangeSlider {
+    margin-top: 15px;
+
+    :global(.rc-slider) {
+    height: 8px;
+    }
+
+    :global(.rc-slider-rail) {
+    background-color: #ccc;
+    height: 8px;
+    border-radius: 4px;
+    }
+
+    :global(.rc-slider-track) {
+    background-color: $tertiary-color;
+    height: 8px;
+    border-radius: 4px;
+    }
+
+    :global(.rc-slider-handle) {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $tertiary-color;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    margin-top: -6px;
+    cursor: grab;
+    }
+
+    :global(.rc-slider-handle:active) {
+    border-color: $tertiary-color;
+    box-shadow: 0 0 8px rgba(25, 118, 210, 0.6);
+    cursor: grabbing;
+    }
+}
+
+.heading {
+    margin-top: 0px;
+}

@@ -1,0 +1,23 @@
+@use "../styles/config" as *;
+
+.sortDropdown {
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        border-color: $secondary-color;
+        background-color: #e7eaf0;
+    }
+
+    &:focus {
+        border-color: $secondary-color;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    }
+}

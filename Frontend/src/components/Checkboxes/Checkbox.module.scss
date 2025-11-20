@@ -1,0 +1,37 @@
+@use "../../styles/_config.scss" as *;
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  background: #f1f3f6;
+  margin-top: 5px;
+  padding: 9px 10px;
+  border-radius: 6px;
+  border: 1px solid $secondary-color;
+  transition: border 0.2s, background 0.2s;
+
+  &:hover {
+    background: $primary-color;
+  }
+}
+
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.checkboxText {
+  user-select: none;
+}
+
+.checked {
+  background-color: $tertiary-color;
+}

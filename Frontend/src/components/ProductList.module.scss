@@ -1,0 +1,61 @@
+@use "../styles/config" as *;
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+
+    @media (min-width: $break-point-small) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $break-point-large) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.errorMessage {
+    font-size: 1.675rem;
+    font-weight: bold;
+    color: $warning-color;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+
+    .button {
+        background-color: #f1f3f6;
+        border: 1px solid $secondary-color;
+        cursor: pointer;
+        padding: 9px 10px;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        transition: border 0.2s, background 0.2s;
+
+        &:hover {
+            background: $primary-color;
+        }
+    }
+
+    .buttonDisabled {
+        background-color: #e7e8eb;
+        border: 1px solid $secondary-color;
+        padding: 9px 10px;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        color: rgba(0,0,0,0.5)
+    }
+
+    .paginationInfo {
+        font-size: 0.875rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

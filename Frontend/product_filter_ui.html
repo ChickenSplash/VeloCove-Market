@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f8fa;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .search-bar input {
+      padding: 0.6rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 220px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: #007bff;
+    }
+
+    .filters {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filters input[type="number"] {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border 0.2s;
+      width: 100px;
+    }
+
+    .filters input[type="number"]:focus {
+      border-color: #007bff;
+    }
+
+    .filters .category-filters {
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .filters label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      background: #f1f3f6;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      transition: border 0.2s, background 0.2s;
+    }
+
+    .filters label:hover {
+      background: #e7eaf0;
+      border-color: #007bff;
+    }
+
+    .filters select {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .filters select:focus {
+      border-color: #007bff;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      color: #007bff;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.4rem;
+    }
+
+    .availability {
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .in-stock {
+      color: green;
+    }
+
+    .out-stock {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+    </div>
+    <div class="filters">
+      <div class="category-filters">
+        <label><input type="checkbox"> Electronics</label>
+        <label><input type="checkbox"> Books</label>
+        <label><input type="checkbox"> Clothing</label>
+      </div>
+
+      <input type="number" placeholder="Min Price">
+      <input type="number" placeholder="Max Price">
+
+      <label><input type="checkbox"> In Stock</label>
+
+      <select>
+        <option>Sort by Price (Low → High)</option>
+        <option>Sort by Price (High → Low)</option>
+        <option>Sort by Rating (Low → High)</option>
+        <option>Sort by Rating (High → Low)</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div class="product-card">
+      <div class="product-name">Wireless Headphones</div>
+      <div class="product-price">€120</div>
+      <div class="product-meta">Category: Electronics</div>
+      <div class="product-meta">Rating: ★</div>
+      <div class="availability in-stock">In Stock</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-name">Cotton T-Shirt</div>
+      <div class="product-price">€25</div>
+      <div class="product-meta">Category: Clothing</div>
+      <div class="product-meta">Rating: ★★★☆☆</div>
+      <div class="availability in-stock">In Stock</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-name">Science Fiction Novel</div>
+      <div class="product-price">€15</div>
+      <div class="product-meta">Category: Books</div>
+      <div class="product-meta">Rating: ★★★★★</div>
+      <div class="availability out-stock">Out of Stock</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-name">Smartwatch</div>
+      <div class="product-price">€199</div>
+      <div class="product-meta">Category: Electronics</div>
+      <div class="product-meta">Rating: ★★★★☆</div>
+      <div class="availability in-stock">In Stock</div>
+    </div>
+  </main>
+</body>
+</html>
